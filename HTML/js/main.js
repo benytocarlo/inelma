@@ -224,7 +224,7 @@ $(document).ready(function($) {
 	/*	Colorbox & flexslider in Single Post
 	/*===========================================================*/	
 	//Examples of how to assign the ColorBox event to elements
-	$(".group1").colorbox({rel:'group1',
+	/*$(".group1").colorbox({rel:'group1',
 		transition:"fade",
 		speed: 1700, 
 		onComplete:function(){
@@ -235,7 +235,7 @@ $(document).ready(function($) {
 
 		  });
 		}
-	});
+	});*/
 
 
 
@@ -250,25 +250,13 @@ $(document).ready(function($) {
 							{ saturation: -300 }
 							
 						]
-					},{
-						featureType: 'road',
-						elementType: 'geometry',
-						stylers: [
-							{ hue: "#ecf0f1" },
-							{ visibility: 'simplified' }
-						]
-					},{
-						featureType: 'road',
-						elementType: 'labels',
-						stylers: [
-							{ visibility: 'off' }
-						]
 					}
 				  ],
 					
 					// Lagitute and longitude for your location goes here
-				   lat = -7.79722,
-				   lng = 110.36880,
+				   lat = -35.43922,
+				   lng = -71.648953,
+				   
 			
 				  // Create a new StyledMapType object, passing it the array of styles,
 				  // as well as the name to be displayed on the map type control.
@@ -278,7 +266,7 @@ $(document).ready(function($) {
 				// Create a map object, and include the MapTypeId to add
 				// to the map type control.
 				  mapOptions = {
-					  zoom: 12,
+					  zoom: 15,
 					scrollwheel: false,
 					  center: new google.maps.LatLng( lat, lng ),
 					  mapTypeControlOptions: {
@@ -474,13 +462,13 @@ $(document).ready(function($) {
 });
 
 
-	$(".twitter-feed").tweet({
+	/*$(".twitter-feed").target({
 		join_text: "auto",
 		username: ["envato"],
 		modpath: "inc/twitter/",
 		count: 10,
 		loading_text: "loading ..."
-    });
+    });*/
 
     
 /*===========================================================*/
